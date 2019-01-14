@@ -11,6 +11,33 @@
     <style media="screen">
       body {
         font-family: "Open Sans", sans-serif;
+        background-color: #fcfcfc;
+      }
+
+      @media (min-width: 576px) {
+        main .container {
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+
+      main .container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      main .container:nth-child(2n) {
+        background-color: white;
+      }
+      main .container:nth-child(2n+1) {
+        background-color: #f9f9f9;
+      }
+
+      .header-element {
+        border-bottom: 2px solid #e8e8e8;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(232, 232, 232);
       }
     </style>
 
@@ -33,9 +60,11 @@
       </nav>
     </div>
 
-    {{ content }}
+    <main>
+        {{ content }}
+    </main>
 
-    <footer class="container mt-5 py-5 border-top border-danger">
+    <footer class="container py-5 border-top border-danger">
       <p class="font-weight-bold">Avec le soutien de</p>
       <div class="row">
         <div class="col-12 col-md-6 col-lg">
