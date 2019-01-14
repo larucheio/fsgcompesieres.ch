@@ -1,14 +1,16 @@
 ---
 ---
 
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$enable-rounded: false;
+
 @import "bootstrap/bootstrap";
 
 body {
-  font-family: "Open Sans", sans-serif;
   background-color: #fcfcfc;
 }
 
-@media (min-width: 576px) {
+@include media-breakpoint-up(sm) {
   main .container {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -28,6 +30,10 @@ main .container:nth-child(2n+1) {
 }
 
 .header-element {
+  @extend .h3;
+  @extend .pb-2;
+  @extend .mb-5;
+  @extend .font-weight-bold;
   border-bottom: 2px solid #e8e8e8;
   border-bottom-width: 2px;
   border-bottom-style: solid;
