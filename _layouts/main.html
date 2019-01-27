@@ -20,7 +20,7 @@
   <body>
 
     <div class="container bg-white border-bottom border-danger">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
+      <nav class="navbar navbar-expand-xl navbar-light bg-white p-3">
         <a class="navbar-brand" href="/">
           <img src="/img/fsg-compesieres-logo.svg" height="25" alt="FSG Compesières">
         </a>
@@ -33,21 +33,22 @@
             <li class="nav-item">
               <a class="nav-link" href="/">Accueil</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cours-gymnastique">Cours de gymnastique</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-compesieres">Section Compesières</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Documents
+                Cours de gymnastique
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#agenda">Agenda</a>
+                <a class="dropdown-item" href="#agenda-horaires">Agenda & Horaires</a>
+                <a class="dropdown-item" href="#tarifs">Tarifs</a>
                 <a class="dropdown-item" href="#reglement">Règlement</a>
                 <a class="dropdown-item" href="#bulletin-inscription">Bulletin d'inscription</a>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#monitrices-moniteurs">Monitrices/Moniteurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-compesieres">Section Compesières</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -61,7 +62,7 @@
         {{ content }}
     </main>
 
-    <footer class="container py-5 border-top border-danger">
+    <footer class="container pt-5 pb-3 border-top border-danger">
       <p class="font-weight-bold">Avec le soutien de</p>
       <div class="row">
         <div class="col-12 col-md-6 col-lg">
@@ -84,6 +85,9 @@
             <img src="/img/sponsor/fonddusport.png" alt="Loterie Romande - Fonds du sport" width="150">
           </a>
         </div>
+      </div>
+      <div class="mt-5">
+        <p class="text-muted small"><a href="https://laruche.io" class="text-reset">Design & développement — laruche</a></p>
       </div>
     </footer>
 
