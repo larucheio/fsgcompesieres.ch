@@ -39,3 +39,11 @@ main .container:nth-child(2n+1) {
   border-bottom-style: solid;
   border-bottom-color: rgb(232, 232, 232);
 }
+
+.hero {
+  background-image: url('/img/hero.jpg');
+  background-position: center top;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
