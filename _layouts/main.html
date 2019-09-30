@@ -16,6 +16,13 @@
     <meta name="msapplication-TileColor" content="#f44100">
     <meta name="theme-color" content="#ffffff">
 
+    {% if page.url contains '/photos/' %}
+      <link rel="stylesheet" href="/assets/vendors/photoswipe/photoswipe.css">
+      <link rel="stylesheet" href="/assets/vendors/photoswipe/default-skin/default-skin.css">
+      <script src="/assets/vendors/photoswipe/photoswipe.min.js"></script>
+      <script src="/assets/vendors/photoswipe/photoswipe-ui-default.min.js"></script>
+    {% endif %}
+
   </head>
   <body>
 
@@ -38,20 +45,23 @@
                 Cours de gymnastique
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#agenda-horaires">Agenda & Horaires</a>
-                <a class="dropdown-item" href="#tarifs">Tarifs</a>
-                <a class="dropdown-item" href="#reglement">Règlement</a>
-                <a class="dropdown-item" href="#inscription">Inscription</a>
+                <a class="dropdown-item" href="/#agenda-horaires">Agenda & Horaires</a>
+                <a class="dropdown-item" href="/#tarifs">Tarifs</a>
+                <a class="dropdown-item" href="/#reglement">Règlement</a>
+                <a class="dropdown-item" href="/#inscription">Inscription</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#monitrices-moniteurs">Monitrices/Moniteurs</a>
+              <a class="nav-link" href="/#monitrices-moniteurs">Monitrices/Moniteurs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section-compesieres">Section Compesières</a>
+              <a class="nav-link" href="/#section-compesieres">Section Compesières</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="/photos">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#contact">Contact</a>
             </li>
           </ul>
         </div>

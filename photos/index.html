@@ -1,0 +1,44 @@
+---
+layout: main
+---
+
+<section class="container">
+  <h2>Fête Fédérale de gym à Aarau — Juin 2019</h2>
+  <div class="photo-gallery photo-gallery--multi-column mt-3" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for image in site.data.photos.fete-federale-aarau-06-2019.images %}
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/img/photos/fete-federale-aarau-06-2019/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}">
+          <img src="/img/photos/fete-federale-aarau-06-2019/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" loading="lazy" width="{{ image.width }}" height="auto" />
+        </a>
+      </figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container">
+  <h2>Journée dans le Terrain aux Eaux-Vives — Mai 2019</h2>
+  <div class="photo-gallery photo-gallery--multi-column mt-3" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for image in site.data.photos.eaux-vives-05-2019.images %}
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/img/photos/eaux-vives-05-2019/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}">
+          <img src="/img/photos/eaux-vives-05-2019/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" loading="lazy" width="{{ image.width }}" height="auto" />
+        </a>
+      </figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container">
+  <h2>Patinoire de Compesière — Février 2019</h2>
+  <div class="photo-gallery photo-gallery--multi-column mt-3" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for image in site.data.photos.patinoire-compesiere-02-2019.images %}
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/img/photos/patinoire-compesiere-02-2019/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}">
+          <img src="/img/photos/patinoire-compesiere-02-2019/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" loading="lazy" width="{{ image.width }}" height="auto" />
+        </a>
+      </figure>
+    {% endfor %}
+  </div>
+</section>
+
+{% include photoswipe.html %}
